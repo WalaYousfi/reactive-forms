@@ -1,0 +1,75 @@
+<!-- <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Favorite food</mat-label>
+      <input matInput placeholder="Ex. Pizza" value="" 
+      ngModel 
+      #food="ngModel" 
+      required
+      minlength="3"
+      (change)="log(food)">
+      <mat-error *ngIf="food.valid && food.errors?.['required']">this is required</mat-error>
+      <mat-error *ngIf="food.errors?.['minlength']"> minimum is {{food.errors?.['minlength']?.required}}</mat-error>
+    </mat-form-field>
+  
+ 
+  </form> -->
+
+
+<!-- <input type="text " [(ngModel)]="inputValue" 
+(ngModelChange)="handleChange($event)"> -->
+
+<!-- <div>
+  <label for="name">enter name</label>
+  <input type="text"
+  required
+  #name="ngModel"
+  name="name"
+  ngModel
+  placeholder="Name"
+  minlength="4"
+  (change)="log(name)">
+
+  <div  *ngIf="name.touched && name.invalid"> 
+      <div *ngIf="name.errors?.['required']">
+          name required
+      </div>
+      <div *ngIf="name.errors?.['minlength']">
+            minlength is {{name.errors?.['minlength']?.requiredLength}}
+      </div>
+  </div>
+</div> -->
+
+<!-- <select name="couleur"
+ngModel
+#couleur="ngModel"
+(change)="log(couleur)"
+required
+
+ >
+  <option *ngFor="let color of colors; count as count" 
+  
+ 
+  > {{color.name}}</option>
+</select> -->
+
+
+
+
+
+
+<!-- <select name="couleur"
+[(ngModel)]="selectedColor"
+
+
+required
+
+ >
+  <option *ngFor="let color of colors" 
+  [ngValue]="color"
+ 
+  > {{color.name}}</option>
+</select>
+
+<div *ngIf="selectedColor">
+  ur fav color is {{selectedColor.name}}
+</div> -->
